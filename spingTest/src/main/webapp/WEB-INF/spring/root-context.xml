@@ -9,8 +9,8 @@
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
 	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
-		<property name="driverClassName" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"></property>
-    	<property name="jdbcUrl" value="jdbc:log4jdbc:mariadb://mariadb:3306/mysql"></property>
+		<property name="driverClassName" value="org.mariadb.jdbc.Driver"></property>
+    	<property name="jdbcUrl" value="jdbc:mysql://mariadb:3306/mysql"></property>
     	<property name="username" value="root" />
 		<property name="password" value="sdf123" />
 	</bean>
